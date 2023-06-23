@@ -7,6 +7,7 @@ from Cards.CardEffects.HighPriestess import PriestessNegativeEffectRoll, Prieste
 from Cards.CardEffects.TheEmperor import EmperorNegativeEffectRoll, EmperorPositiveEffectRoll
 from Cards.CardEffects.TheHierophant import HierophantNegativeEffectRoll, HierophantPositiveEffectRoll
 from Cards.CardEffects.TheLovers import LoversNegativeEffectRoll, LoversPositiveEffectRoll
+from Cards.CardEffects.TheChariot import ChariotNegativeEffectRoll, ChariotPositiveEffectRoll
 #End of imports
 
 Cards = [
@@ -55,7 +56,8 @@ def selectEffect(RollResult, Card):
         "The Fool": [FoolNegativeEffectRoll, FoolPositiveEffectRoll],
         "The Magician": [MagicianNegativeEffectRoll, MagicianPositiveEffectRoll],
         "The Hierophant": [HierophantNegativeEffectRoll, HierophantPositiveEffectRoll],
-        "The Lovers": [LoversNegativeEffectRoll, LoversPositiveEffectRoll]
+        "The Lovers": [LoversNegativeEffectRoll, LoversPositiveEffectRoll],
+        "The Chariot": [ChariotNegativeEffectRoll, ChariotPositiveEffectRoll]
     }
 
     if Card in card_effects:
