@@ -21,23 +21,24 @@ def AdvantageRoll():
     D20R = D20Roll()
     D90R = D90Roll()
     if D20R > D90R:
-        Result.set(f"D20: {D20R}, D90: {D90R}, Result of Advantage: D20 HIGHER")
+        advantage = "D20 HIGHER"
     elif D90R > D20R:
-        Result.set(f"D20: {D20R}, D90: {D90R}, Result of Advantage: D90 HIGHER")
+        advantage = "D90 HIGHER"
     else:
-        Result.set(f"D20: {D20R}, D90: {D90R}, Result of Advantage: TIE")
-        
+        advantage = "TIE"
+    Result.set(f"D20: {D20R}, D90: {D90R}, Result of Advantage: {advantage}")
         
 def DisadvantageRoll():
     print("Running Disadvantage Roll")
     D12R = D12Roll()
     D20R = D20Roll()
     if D12R < D20R:
-        Result.set(f"D12: {D12R}, D20: {D20R}, Result of Disadvantage: D12 LOWER")
+        Disadvantage = "D12 LOWER"
     elif D20R < D12R:
-        Result.set(f"D12: {D12R}, D20: {D20R}, Result of Disadvantage: D20 LOWER")
+        Disadvantage = "D20 LOWER"
     else:
-        Result.set(f"D12: {D12R}, D20: {D20R}, Result of Disadvantage: TIE")
+        Disadvantage = "TIE"
+    Result.set(f"D12: {D12R}, D20: {D20R}, Result of Disadvantage: {Disadvantage}")
         
 def D20Single():
     print("Running D20 Roll")
