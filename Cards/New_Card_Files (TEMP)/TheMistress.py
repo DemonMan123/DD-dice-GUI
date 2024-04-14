@@ -1,12 +1,12 @@
 import secrets
 
-NegativeEffects = ['EFFECT', 'EFFECT', 'EFFECT']
-PositiveEffects = ['EFFECT', 'EFFECT', 'EFFECT']
+NegativeEffects = ['Temptations Trap', 'Lusts Ensnarement', 'Jealous Wrath']
+PositiveEffects = ['Enthralling Charm', 'Seductive Veil', 'Mistresss Embrace']
 
-def NegativeEffectRoll():
+def TheMistressNegativeEffectRoll():
     NegativeRoll = secrets.choice(NegativeEffects)
     return NegativeRoll
 
-def PositiveEffectRoll():
+def TheMistressPositiveEffectRoll():
     PositiveRoll = secrets.choice(PositiveEffects)
     return PositiveRoll

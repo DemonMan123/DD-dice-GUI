@@ -1,12 +1,12 @@
 import secrets
 
-NegativeEffects = ['EFFECT', 'EFFECT', 'EFFECT']
-PositiveEffects = ['EFFECT', 'EFFECT', 'EFFECT']
+NegativeEffects = ['Raging Elements', 'Primeval Curse', 'Chaos of Creation']
+PositiveEffects = ['Ancient Wisdom', 'Primal Blessing', 'Natures Harmony']
 
-def NegativeEffectRoll():
+def ThePrimordialNegativeEffectRoll():
     NegativeRoll = secrets.choice(NegativeEffects)
     return NegativeRoll
 
-def PositiveEffectRoll():
+def ThePrimordialPositiveEffectRoll():
     PositiveRoll = secrets.choice(PositiveEffects)
     return PositiveRoll

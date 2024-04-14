@@ -19,7 +19,28 @@ Descriptions = {
     'Creeds Protection' : "The Tarot Holder becomes resistant to Psychomancy and the Evophage.",
     'Broken Oath' : "The Tarot Holder loses the trust and favor of any Creedsmen they come across. This decreases [Charisma] by 2 [Social Points] when interacting with Creedsmen.",
     'Fallen Comrades' : "The Creedsmen are hostile to the party due to orders from someone else, forcing them to attack you.",
-    'Creeds Judgement' : "The Creedsmen deem the party heretics and will from now on hunt the party till they can prove their innocence."
+    'Creeds Judgement' : "The Creedsmen deem the party heretics and will from now on hunt the party till they can prove their innocence.",
+    # The Mistress
+    'Enthralling Charm' : "The party encounters a charismatic mistress who offers them valuable information or assistance in exchange for a favor, granting them access to hidden knowledge or resources.",
+    'Seductive Veil' : "The Tarot Holder has maximum [Charisma].",
+    'Mistresss Embrace' : "The Tarot Holder is suddenly much braver, making them immune to being mind controlled or frightened.",
+    'Temptations Trap' : "The Tarot Holder falls victim to the manipulative charm of a deceitful mistress, resulting in betrayal or being led into a dangerous situation.",
+    'Lusts Ensnarement' : "The Tarot Holder becomes infatuated with a seductive mistress, causing distraction and a 2 [Social Points] decrease on [Wisdom].",
+    'Jealous Wrath' : "The party incurs the wrath of a jealous mistress, becoming the target of her vindictive schemes and facing 5 [Social Points] to [Charisma] when interacting with Gangers.",
+    # The Primordial
+    'Ancient Wisdom' : "The Tarot Holder encounters an ancient primordial entity who imparts profound wisdom and knowledge of the natural world, granting them insight into rituals and otherworldly texts.",
+    'Primal Blessing' : "The Tarot Holder gains enhanced physical strength and resistance to non-Mawic damage.",
+    'Natures Harmony' : "The Tarot Holder gains an advantage on [Survival] and [Nature] rolls.",
+    'Raging Elements' : "The party experiences natural disasters or environmental hazards in the area.",
+    'Primeval Curse' : "The party becomes more susceptible to possession when in the presence of Mawic portals.",
+    'Chaos of Creation' : "The party encounters a ritual being done that will summon a Possessor of the Maw if not interrupted.",
+    # The Oracle
+    'Divine Insight' : "The Tarot Holder receives a vision of the future.",
+    'Oracles Eye' : "The Tarot Holder is able to see the actions of their enemies before they do it.",
+    'Fates Intervention' : "The Tarot Holder gains protection from another force, granting them [Advantaged Rolls] on their [Death Saving] rolls against harmful effects (Bleed, Void Burn, and Burning).",
+    'Cryptic Visions' : "The Tarot Holder is plagued by cryptic visions from the oracle, causing confusion and uncertainty about their true meaning.",
+    'Twisted Fate' : "The Tarot Holder's actions can alter the course of fate, leading to unintended consequences.",
+    'Oracles Curse' : "The Tarot Holder will be cursed if they seek out forbidden knowledge, attracting the attention of malevolent forces seeking to manipulate their destiny.",
 }
 
 def getEffectDescription(Effect):
@@ -27,5 +48,5 @@ def getEffectDescription(Effect):
     if Effect in Descriptions:
         Description = Descriptions[Effect]
     else:
-        Description = "Not available"
+        Description = "NULL"
     return Description
