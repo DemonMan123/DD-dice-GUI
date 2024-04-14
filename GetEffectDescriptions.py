@@ -41,6 +41,48 @@ Descriptions = {
     'Cryptic Visions' : "The Tarot Holder is plagued by cryptic visions from the oracle, causing confusion and uncertainty about their true meaning.",
     'Twisted Fate' : "The Tarot Holder's actions can alter the course of fate, leading to unintended consequences.",
     'Oracles Curse' : "The Tarot Holder will be cursed if they seek out forbidden knowledge, attracting the attention of malevolent forces seeking to manipulate their destiny.",
+    # The Geminic Bond
+    'Dual Unity' : "The Tarot Holder forms a bond with another party member, granting them advantage on all cooperative actions with them.",
+    'Shared Knowledge' : "The Tarot Holder gains access to another party member's [Social Traits].",
+    'Twin Protection' : "The Tarot Holder shares a protective aura with a bonded party member, granting resistance to all damage types while within [Clarity] of each other.",
+    'Fractured Unity' : "The Tarot Holder has a strained bond with another party member, resulting in penalties to cooperative actions.",
+    'Divided Loyalties' : "The bond between the Tarot Holder and the bonded party member will attract the attention of rivals or enemies who seek to exploit their connection, putting both of them in danger.",
+    'Bonds Betrayal' : "If the Tarot Holder leaves [Clarity] of the bonded party member, that party member gets cut off from the rest of the party temporarily.",
+    # The Warp Drive
+    'Temporal Shift' : "The Tarot Holder gains the ability to briefly manipulate time, granting them an [Advantaged Roll] on their action, as well as an additional turn in combat.",
+    'Dimensional Shortcut' : "The Tarot Holder finds a Mawic portal that leads to a random safe location. If the holder is a Bionic, they can open a Mawic portal once.",
+    'Maws Protection' : "The Tarot Holder is protected from teleportation and planar effects for a limited time.",
+    'Temporal Distortion' : "The party gets caught in a time loop that disorients them. They must find a way to exit the distortion or everyone rolls a success on [Disadvantaged Rolls].",
+    'Reality Fracture' : "The Tarot Holder spawns a small Empyric Swarm to occur.",
+    'Mawic Corruption' : "The party gains Mawic exposure, corrupting their health to half.",
+    # The Guardian Shield
+    'Shield of Protection' : "The Tarot Holder is enveloped in a shimmering aura of protective energy, granting resistance to all forms of damage.",
+    'Guardians Vigilance' : "The Tarot Holder gains an advantage on [Perception] rolls for finding hidden dangers.",
+    'Sentinels Aid' : "The Tarot Holder finds a drone that has [Calculated Faith] and provides guidance through the area.",
+    'Shields Burden' : "The Tarot Holder's armor is powered off, slowing them down.",
+    'Guardians Judgement' : "Your [Defense] is depleted temporarily.",
+    'Waning Protection' : "The party's [Defense] slowly depletes over time. Killing enemies will replenish half [Defense].",
+    # The Isolationist
+    'Solitudes Respite' : "The Tarot Holder is immune to mind control and mental effects if alone.",
+    'Isolations Insight' : "The Tarot Holder gains 2 extra [Social Points] to their [Intelligence] and [Death Saving] rolls.",
+    'Hermits Revelation' : "If the Tarot Holder is alone, they gain knowledge of a hidden secret.",
+    'Lonelinesss Grip' : "The Tarot Holder has a feeling of loneliness and despair, causing a 2 [Social Points] decrease to their [Charisma].",
+    'Isolations Madness' : "The Tarot Holder is driven to madness, causing them to hallucinate that affects their decision-making.",
+    'Desperate Isolation' : "The Tarot Holder attempts to isolate themselves are thwarted by circumstances, leaving them unable to find solitude.",
+    # The Shifting Maw
+    'Maw Adaptation' : "The Tarot Holder gains the ability to adapt to their surroundings, granting them [Advantaged Rolls] on their saving throws against hazards and terrain effects.",
+    'Eternal Flux' : "The Tarot Holder's armor deflects against status effects and conditions that would impede movement or actions.",
+    'Maws Swiftness' : "The Tarot Holder is granted increased speed and agility.",
+    'Unstable Ground' : "The party's surroundings become unstable and unpredictable, causing difficult terrain and hazards to appear suddenly.",
+    'Maws Hunger' : "The Tarot Holder becomes attracted to the Maw, experiencing an uncontrollable hunger or thirst for the Maw, causing penalties to their actions.",
+    'Dimensional Instability' : "The party experiences an instability in reality, having to shift through the Maw and back into reality several times. This causes penalties to their actions and [Defenses].",
+    # The Adjudication
+    'Judgements Favor' : "The Tarot Holder is given an item from a member of the Adjudication, granting them [Advantaged Rolls] on their saving throws against harmful effects and attacks.",
+    'Fair Trial' : "The Tarot Holder gains the opportunity to prove themselves in combat before members of the Adjudication, rewarding them if they impress them enough.",
+    'Adjudicators Guidance' : "The party receives guidance and aid from an Adjudicator, allowing them more insight to a situation or event.",
+    'Unjust Verdict' : "The Tarot Holder is falsely accused by members Defense Company 'Black Sheep' and judged guilty, causing the holder to be hunted till they can prove their innocence.",
+    'Adjudicators Wrath' : "The party upsets an Adjudicator, causing them to receive less items from locals.",
+    'Twisted Justice' : "The party is being targeted by someone apart of the Adjudication, making it harder to avoid manipulation and betrayal if seeking out authorities."
 }
 
 def getEffectDescription(Effect):

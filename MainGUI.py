@@ -68,7 +68,7 @@ def CardDescriptionWindow(Card_Name, cardDesc, effect, RollType, EffectDescripti
     CardDesc.iconphoto(False, PhotoImage(file='icons/5429974.ico')) 
     center_window(CardDesc, 300, 200)  # Make sure this function is properly defined somewhere in your code
 
-    # Display the card description with word wrapping
+    # Display the card description with word wrapping (IDC about making it look nice. It's really a public program anyways)
     label = Label(CardDesc, text=cardDesc)
     Effect = Label(CardDesc, text=f"Your effect: {effect}")
     RollType = Label(CardDesc, text=f"Roll Type: {RollType}")
