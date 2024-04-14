@@ -6,6 +6,7 @@ from Dice.D20 import D20Roll
 from Dice.D12 import D12Roll
 from TarotCardSelect import SelectCards, selectEffect
 from Cards.Descriptions import search_word
+from GetEffectDescriptions import getEffectDescription
 
 # Create and setup main root window
 root = Tk()
@@ -55,32 +56,37 @@ def center_window(window, width, height):
     y = (screen_height // 2) - (height // 2)
     window.geometry(f"{width}x{height}+{x}+{y}")
 
-def CardDescriptionWindow(Card_Name, cardDesc, effect):
-    img = PhotoImage(file='icons/5429974.ico')
+
+def CardDescriptionWindow(Card_Name, cardDesc, effect, RollType, EffectDescription):
     global CardDesc
     if CardDesc is not None and CardDesc.winfo_exists():
         CardDesc.destroy()
-
+    
     CardDesc = Toplevel()
     CardDesc.title(f"{Card_Name}'s description")
-    CardDesc.resizable(False,False)
-    CardDesc.iconphoto(False, img) 
-    center_window(CardDesc, 300, 90)
+    CardDesc.resizable(True, False)
+    CardDesc.iconphoto(False, PhotoImage(file='icons/5429974.ico')) 
+    center_window(CardDesc, 300, 200)  # Make sure this function is properly defined somewhere in your code
 
-    # Display the card description
+    # Display the card description with word wrapping
     label = Label(CardDesc, text=cardDesc)
     Effect = Label(CardDesc, text=f"Your effect: {effect}")
+    RollType = Label(CardDesc, text=f"Roll Type: {RollType}")
+    Effect_Description = Label(CardDesc, text=f"Effect description:\n{EffectDescription}", wraplength=280)
     label.place(x=15, y=10)
-    Effect.place(x=15, y=50)
-
+    Effect.place(x=15, y=35)
+    RollType.place(x=15, y=60)
+    Effect_Description.place(x=15, y=90)
+    
 def TarotCardSel():
     TarotCard = SelectCards()
     Result.set(f"Your Tarot card: {TarotCard}")
     CardDescription = search_word(TarotCard)
     Roll = D20Roll()
-    Effect = selectEffect(Roll, TarotCard)
+    Effect,RollType = selectEffect(Roll, TarotCard)
+    EffectDescription = getEffectDescription(Effect)
     print(f"Rolling D20... {Roll}")
-    CardDescriptionWindow(TarotCard, CardDescription, Effect)
+    CardDescriptionWindow(TarotCard, CardDescription, Effect, RollType, EffectDescription)
 
 
 # Create text for the output into GUI
