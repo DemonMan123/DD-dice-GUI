@@ -82,7 +82,77 @@ Descriptions = {
     'Adjudicators Guidance' : "The party receives guidance and aid from an Adjudicator, allowing them more insight to a situation or event.",
     'Unjust Verdict' : "The Tarot Holder is falsely accused by members Defense Company 'Black Sheep' and judged guilty, causing the holder to be hunted till they can prove their innocence.",
     'Adjudicators Wrath' : "The party upsets an Adjudicator, causing them to receive less items from locals.",
-    'Twisted Justice' : "The party is being targeted by someone apart of the Adjudication, making it harder to avoid manipulation and betrayal if seeking out authorities."
+    'Twisted Justice' : "The party is being targeted by someone apart of the Adjudication, making it harder to avoid manipulation and betrayal if seeking out authorities.",
+    # The Martyr
+    'Sacrificial Blessing' : "The Tarot Holder willingly sacrifices themselves, gaining temporary invulnerability and the ability to protect their allies at the cost of 90% of their health.",
+    'Martyrs Redemption' : "If the Tarot Holder is downed or dies, the party members are granted a morale boost and temporary bonuses to their actions.",
+    'Martyrs Legacy' : "The party encounters the souls of heroes that had fought and died in the area, granting them safe passage to the next safe area and items will cost less.",
+    'Martyrs Burden' : "A party member will randomly be killed in a heroic last stand.",
+    'Forgotten Martyr' : "The party will be refused entry into safe areas.",
+    'Martyrs Fall' : "An event will occur where the Tarot Holder must sacrifice themselves to save the party from certain death, if the party fails to escape the event, they will be forced to fight their way out of the event.",
+    # The Maw
+    'Consuming Power' : "The Tarot Holder is given primal energy of the Maw, gaining temporary strength and vitality that enhances their attack actions and bonus to damage.",
+    'Maws Embrace' : "The Tarot Holder has the ability to redirect incoming attacks.",
+    'Eternal Hunger' : "If the Tarot Holder is near death, they start to suck the life force from nearby enemies, healing themselves in the process.",
+    'Maws Corruption' : "The Tarot Holder becomes insane, impairing their judgement.",
+    'Unending Void' : "The Tarot Holder tries to wield the power of the Maw, but becomes consumed by it, causing them to die or become heavily corrupted.",
+    'Maws Wrath' : "The Tarot Holder attracts the Empyric Swarm to the area, seeking out souls of anyone they find.",
+    # Angel of the Maw
+    'Divine Intervention' : "The Tarot Holder is granted divine protection by an Angel of the Maw, gaining immunity to harmful effects and attacks temporarily.",
+    'Redeeming Light' : "The party is granted a bonus to skills.",
+    'Guardian Angel' : "An Angel of the Maw mentally interacts with the Tarot Holder, guiding them away from harm.",
+    'Fallen Angel' : "The area is covered in pitch black darkness.",
+    'Betrayed Trust' : "The Tarot Holder encounters an Angel of the Maw who has malevolent intentions.",
+    'Lost Faith' : "The Tarot Holder's faith is disconnected from the Ancestors, forcing them to seek out an Angel of the Maw.",
+    # Possessor of the Maw
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : "",
+    # High Spire
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : "",
+    # The Gate
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : "",
+    # Black Moon
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : "",
+    # Solar Beacon
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : "",
+    # Call of the Maw
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : "",
+    # Astral Realm
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : "",
+    '' : ""
 }
 
 def getEffectDescription(Effect):

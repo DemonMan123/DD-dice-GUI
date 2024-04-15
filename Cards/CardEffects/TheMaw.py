@@ -1,12 +1,12 @@
 import secrets
 
-NegativeEffects = ['EFFECT', 'EFFECT', 'EFFECT']
-PositiveEffects = ['EFFECT', 'EFFECT', 'EFFECT']
+NegativeEffects = ['Maws Corruption', 'Unending Void', 'Maws Wrath']
+PositiveEffects = ['Consuming Power', 'Maws Embrace', 'Eternal Hunger']
 
-def NegativeEffectRoll():
+def TheMawNegativeEffectRoll():
     NegativeRoll = secrets.choice(NegativeEffects)
     return NegativeRoll
 
-def PositiveEffectRoll():
+def TheMawPositiveEffectRoll():
     PositiveRoll = secrets.choice(PositiveEffects)
     return PositiveRoll

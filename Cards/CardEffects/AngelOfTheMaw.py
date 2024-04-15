@@ -1,12 +1,12 @@
 import secrets
 
-NegativeEffects = ['EFFECT', 'EFFECT', 'EFFECT']
-PositiveEffects = ['EFFECT', 'EFFECT', 'EFFECT']
+NegativeEffects = ['Fallen Angel', 'Betrayed Trust', 'Lost Faith']
+PositiveEffects = ['Divine Intervention', 'Redeeming Light', 'Guardian Angel']
 
-def NegativeEffectRoll():
+def AngelOfTheMawNegativeEffectRoll():
     NegativeRoll = secrets.choice(NegativeEffects)
     return NegativeRoll
 
-def PositiveEffectRoll():
+def AngelOfTheMawPositiveEffectRoll():
     PositiveRoll = secrets.choice(PositiveEffects)
     return PositiveRoll

@@ -1,12 +1,12 @@
 import secrets
 
-NegativeEffects = ['EFFECT', 'EFFECT', 'EFFECT']
-PositiveEffects = ['EFFECT', 'EFFECT', 'EFFECT']
+NegativeEffects = ['Martyrs Burden', 'Forgotten Martyr', 'Martyrs Fall']
+PositiveEffects = ['Sacrificial Blessing', 'Martyrs Redemption', 'Martyrs Legacy']
 
-def NegativeEffectRoll():
+def TheMartyrNegativeEffectRoll():
     NegativeRoll = secrets.choice(NegativeEffects)
     return NegativeRoll
 
-def PositiveEffectRoll():
+def TheMartyrPositiveEffectRoll():
     PositiveRoll = secrets.choice(PositiveEffects)
     return PositiveRoll

@@ -1,6 +1,6 @@
 # Important imports (DO NOT MESS WITH THIS)
 import secrets
-# from Cards.CardEffects.AngelOfTheMaw import AngelOfTheMawNegativeEffectRoll, AngelOfTheMawPositiveEffectRoll
+from Cards.CardEffects.AngelOfTheMaw import AngelOfTheMawNegativeEffectRoll, AngelOfTheMawPositiveEffectRoll
 # from Cards.CardEffects.AstralRealm import AstralRealmNegativeEffectRoll, AstralRealmPositiveEffectRoll
 # from Cards.CardEffects.BlackMoon import BlackMoonNegativeEffectRoll, BlackMoonPositiveEffectRoll
 # from Cards.CardEffects.CallOfTheMaw import CallOfTheMawNegativeEffectRoll, CallOfTheMawPositiveEffectRoll
@@ -14,8 +14,8 @@ from Cards.CardEffects.TheGeminicBond import TheGeminicBondNegativeEffectRoll, T
 from Cards.CardEffects.TheGuardianShield import TheGuardianShieldNegativeEffectRoll, TheGuardianShieldPositiveEffectRoll
 from Cards.CardEffects.TheIsolationist import TheIsolationistNegativeEffectRoll, TheIsolationistPositiveEffectRoll
 from Cards.CardEffects.TheJester import TheJesterNegativeEffectRoll, TheJesterPositiveEffectRoll
-# from Cards.CardEffects.TheMartyr import TheMartyrNegativeEffectRoll, TheMartyrPositiveEffectRoll
-# from Cards.CardEffects.TheMaw import TheMawNegativeEffectRoll, TheMawPositiveEffectRoll
+from Cards.CardEffects.TheMartyr import TheMartyrNegativeEffectRoll, TheMartyrPositiveEffectRoll
+from Cards.CardEffects.TheMaw import TheMawNegativeEffectRoll, TheMawPositiveEffectRoll
 from Cards.CardEffects.TheMistress import TheMistressNegativeEffectRoll, TheMistressPositiveEffectRoll
 from Cards.CardEffects.TheOracle import TheOracleNegativeEffectRoll, TheOraclePositiveEffectRoll
 from Cards.CardEffects.ThePrimordial import ThePrimordialNegativeEffectRoll, ThePrimordialPositiveEffectRoll
@@ -97,9 +97,9 @@ def selectEffect(RollResult, Card):
         'The Isolationist': [TheIsolationistNegativeEffectRoll, TheIsolationistPositiveEffectRoll],
         'The Shifting Maw': [TheShiftingMawNegativeEffectRoll, TheShiftingMawPositiveEffectRoll],
         'The Adjudication': [TheAdjudicationNegativeEffectRoll, TheAdjudicationPositiveEffectRoll],
-        # 'The Martyr': [TheMartyrNegativeEffectRoll, TheMartyrPositiveEffectRoll],
-        # 'The Maw': [TheMawNegativeEffectRoll, TheMawPositiveEffectRoll],
-        # 'Angel of the Maw': [AngelOfTheMawNegativeEffectRoll, AngelOfTheMawPositiveEffectRoll],
+        'The Martyr': [TheMartyrNegativeEffectRoll, TheMartyrPositiveEffectRoll],
+        'The Maw': [TheMawNegativeEffectRoll, TheMawPositiveEffectRoll],
+        'Angel of the Maw': [AngelOfTheMawNegativeEffectRoll, AngelOfTheMawPositiveEffectRoll],
         # 'Possessor of the Maw': [PossessorOfTheMawNegativeEffectRoll, PossessorOfTheMawPositiveEffectRoll],
         # 'High Spire': [HighSpireNegativeEffectRoll, HighSpirePositiveEffectRoll],
         # 'The Gate': [TheGateNegativeEffectRoll, TheGatePositiveEffectRoll],

@@ -11,9 +11,9 @@ word_dict = {
     'The Isolationist': "Symbolizes withdrawal, introspection, and the necessity of solitude for growth.",
     'The Shifting Maw': "Signifies change, instability, and the relentless cycle of creation and destruction.",
     'The Adjudication': "Represents justice, fairness, and the resolution of conflicts through impartial judgment.",
-    # 'The Martyr': "Embodies sacrifice, selflessness, and the willingness to endure suffering for a greater cause.",
-    # 'The Maw': "Symbolizes the abyss, the unknown, and the consuming darkness that lurks within.",
-    # 'Angel of the Maw': "Represents redemption, salvation, and the guiding light within the darkness.",
+    'The Martyr': "Embodies sacrifice, selflessness, and the willingness to endure suffering for a greater cause.",
+    'The Maw': "Symbolizes the abyss, the unknown, and the consuming darkness that lurks within.",
+    'Angel of the Maw': "Represents redemption, salvation, and the guiding light within the darkness."
     # 'Possessor of the Maw': "Signifies control over primal forces, inner demons, and the harnessing of raw power.",
     # 'High Spire': "Embodies aspiration, elevation, and the pursuit of lofty goals.",
     # 'The Gate': "Symbolizes transitions, thresholds, and the passage from one phase of life to another.",
