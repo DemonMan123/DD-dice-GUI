@@ -1,12 +1,12 @@
 import secrets
 
-NegativeEffects = ['EFFECT', 'EFFECT', 'EFFECT']
-PositiveEffects = ['EFFECT', 'EFFECT', 'EFFECT']
+NegativeEffects = ['Corrupted Soul', 'Haunted by Shadows', 'Bargain of the Abyss']
+PositiveEffects = ['Dominion Over Darkness', 'Consuming Avatar', 'Maws Sovereignty']
 
-def NegativeEffectRoll():
+def PossessorOfTheMawNegativeEffectRoll():
     NegativeRoll = secrets.choice(NegativeEffects)
     return NegativeRoll
 
-def PositiveEffectRoll():
+def PossessorOfTheMawPositiveEffectRoll():
     PositiveRoll = secrets.choice(PositiveEffects)
     return PositiveRoll

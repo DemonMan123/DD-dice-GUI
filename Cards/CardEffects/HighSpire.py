@@ -1,12 +1,12 @@
 import secrets
 
-NegativeEffects = ['EFFECT', 'EFFECT', 'EFFECT']
-PositiveEffects = ['EFFECT', 'EFFECT', 'EFFECT']
+NegativeEffects = ['Abyssal Fall', 'Storms Wrath', 'Lonely Heights']
+PositiveEffects = ['Aerial Advantage', 'Eagles Eye', 'Tactical Jump']
 
-def NegativeEffectRoll():
+def HighSpireNegativeEffectRoll():
     NegativeRoll = secrets.choice(NegativeEffects)
     return NegativeRoll
 
-def PositiveEffectRoll():
+def HighSpirePositiveEffectRoll():
     PositiveRoll = secrets.choice(PositiveEffects)
     return PositiveRoll

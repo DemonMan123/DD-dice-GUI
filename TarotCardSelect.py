@@ -4,12 +4,12 @@ from Cards.CardEffects.AngelOfTheMaw import AngelOfTheMawNegativeEffectRoll, Ang
 # from Cards.CardEffects.AstralRealm import AstralRealmNegativeEffectRoll, AstralRealmPositiveEffectRoll
 # from Cards.CardEffects.BlackMoon import BlackMoonNegativeEffectRoll, BlackMoonPositiveEffectRoll
 # from Cards.CardEffects.CallOfTheMaw import CallOfTheMawNegativeEffectRoll, CallOfTheMawPositiveEffectRoll
-# from Cards.CardEffects.HighSpire import HighSpireNegativeEffectRoll, HighSpirePositiveEffectRoll
-# from Cards.CardEffects.PossessorOfTheMaw import PossessorOfTheMawNegativeEffectRoll, PossessorOfTheMawPositiveEffectRoll
+from Cards.CardEffects.HighSpire import HighSpireNegativeEffectRoll, HighSpirePositiveEffectRoll
+from Cards.CardEffects.PossessorOfTheMaw import PossessorOfTheMawNegativeEffectRoll, PossessorOfTheMawPositiveEffectRoll
 # from Cards.CardEffects.SolarBeacon import SolarBeaconNegativeEffectRoll, SolarBeaconPositiveEffectRoll
 from Cards.CardEffects.TheAdjudication import TheAdjudicationNegativeEffectRoll, TheAdjudicationPositiveEffectRoll
 from Cards.CardEffects.TheCreedsmen import TheCreedsmenNegativeEffectRoll, TheCreedsmenPositiveEffectRoll
-# from Cards.CardEffects.TheGate import TheGateNegativeEffectRoll, TheGatePositiveEffectRoll
+from Cards.CardEffects.TheGate import TheGateNegativeEffectRoll, TheGatePositiveEffectRoll
 from Cards.CardEffects.TheGeminicBond import TheGeminicBondNegativeEffectRoll, TheGeminicBondPositiveEffectRoll
 from Cards.CardEffects.TheGuardianShield import TheGuardianShieldNegativeEffectRoll, TheGuardianShieldPositiveEffectRoll
 from Cards.CardEffects.TheIsolationist import TheIsolationistNegativeEffectRoll, TheIsolationistPositiveEffectRoll
@@ -24,31 +24,6 @@ from Cards.CardEffects.TheSorcerer import TheSorcererNegativeEffectRoll, TheSorc
 from Cards.CardEffects.TheWarpDrive import TheWarpDriveNegativeEffectRoll, TheWarpDrivePositiveEffectRoll
 # End of imports
 
-'''
-Cards = [
-    'The Fool',
-    'The Magician',
-    'The High Priestess', 
-    'The Empress', 
-    'The Emperor', 
-    'The Hierophant', 
-    'The Lovers', 
-    'The Chariot', 
-    'Strength', 
-    'The Hermit', 
-    'The Wheel of Fortune', 
-    'Justice', 
-    'The Hanged Man', 
-    'Death', 
-    'Temperance', 
-    'The Devil', 
-    'The Tower', 
-    'The Star', 
-    'The Moon', 
-    'The Sun', 
-    'Judgement', 
-    'The World'
-]'''
 # New Cards (Not yet implemented)
 Cards = [
     'The Jester',
@@ -100,9 +75,9 @@ def selectEffect(RollResult, Card):
         'The Martyr': [TheMartyrNegativeEffectRoll, TheMartyrPositiveEffectRoll],
         'The Maw': [TheMawNegativeEffectRoll, TheMawPositiveEffectRoll],
         'Angel of the Maw': [AngelOfTheMawNegativeEffectRoll, AngelOfTheMawPositiveEffectRoll],
-        # 'Possessor of the Maw': [PossessorOfTheMawNegativeEffectRoll, PossessorOfTheMawPositiveEffectRoll],
-        # 'High Spire': [HighSpireNegativeEffectRoll, HighSpirePositiveEffectRoll],
-        # 'The Gate': [TheGateNegativeEffectRoll, TheGatePositiveEffectRoll],
+        'Possessor of the Maw': [PossessorOfTheMawNegativeEffectRoll, PossessorOfTheMawPositiveEffectRoll],
+        'High Spire': [HighSpireNegativeEffectRoll, HighSpirePositiveEffectRoll],
+        'The Gate': [TheGateNegativeEffectRoll, TheGatePositiveEffectRoll],
         # 'Black Moon': [BlackMoonNegativeEffectRoll, BlackMoonPositiveEffectRoll],
         # 'Solar Beacon': [SolarBeaconNegativeEffectRoll, SolarBeaconPositiveEffectRoll],
         # 'Call of the Maw': [CallOfTheMawNegativeEffectRoll, CallOfTheMawPositiveEffectRoll],
