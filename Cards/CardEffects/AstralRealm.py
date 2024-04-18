@@ -1,12 +1,12 @@
 import secrets
 
-NegativeEffects = ['EFFECT', 'EFFECT', 'EFFECT']
-PositiveEffects = ['EFFECT', 'EFFECT', 'EFFECT']
+NegativeEffects = ['Astral Runes', 'Celestial Anguish', 'NOTHING']
+PositiveEffects = ['Cosmic Insight', 'Astral Projection', 'NOTHING']
 
-def NegativeEffectRoll():
+def AstralRealmNegativeEffectRoll():
     NegativeRoll = secrets.choice(NegativeEffects)
     return NegativeRoll
 
-def PositiveEffectRoll():
+def AstralRealmPositiveEffectRoll():
     PositiveRoll = secrets.choice(PositiveEffects)
     return PositiveRoll

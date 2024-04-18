@@ -1,12 +1,12 @@
 import secrets
 
-NegativeEffects = ['EFFECT', 'EFFECT', 'EFFECT']
-PositiveEffects = ['EFFECT', 'EFFECT', 'EFFECT']
+NegativeEffects = ['Cursed Eclipse', 'Moons Malice', 'Tides of Darkness']
+PositiveEffects = ['Shadowy Veil', 'Umbral Shield', 'Umbral Conduit']
 
-def NegativeEffectRoll():
+def BlackMoonNegativeEffectRoll():
     NegativeRoll = secrets.choice(NegativeEffects)
     return NegativeRoll
 
-def PositiveEffectRoll():
+def BlackMoonPositiveEffectRoll():
     PositiveRoll = secrets.choice(PositiveEffects)
     return PositiveRoll

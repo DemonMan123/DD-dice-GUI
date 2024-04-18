@@ -1,12 +1,12 @@
 # Important imports (DO NOT MESS WITH THIS)
 import secrets
 from Cards.CardEffects.AngelOfTheMaw import AngelOfTheMawNegativeEffectRoll, AngelOfTheMawPositiveEffectRoll
-# from Cards.CardEffects.AstralRealm import AstralRealmNegativeEffectRoll, AstralRealmPositiveEffectRoll
-# from Cards.CardEffects.BlackMoon import BlackMoonNegativeEffectRoll, BlackMoonPositiveEffectRoll
-# from Cards.CardEffects.CallOfTheMaw import CallOfTheMawNegativeEffectRoll, CallOfTheMawPositiveEffectRoll
+from Cards.CardEffects.AstralRealm import AstralRealmNegativeEffectRoll, AstralRealmPositiveEffectRoll
+from Cards.CardEffects.BlackMoon import BlackMoonNegativeEffectRoll, BlackMoonPositiveEffectRoll
+from Cards.CardEffects.CallOfTheMaw import CallOfTheMawNegativeEffectRoll, CallOfTheMawPositiveEffectRoll
 from Cards.CardEffects.HighSpire import HighSpireNegativeEffectRoll, HighSpirePositiveEffectRoll
 from Cards.CardEffects.PossessorOfTheMaw import PossessorOfTheMawNegativeEffectRoll, PossessorOfTheMawPositiveEffectRoll
-# from Cards.CardEffects.SolarBeacon import SolarBeaconNegativeEffectRoll, SolarBeaconPositiveEffectRoll
+from Cards.CardEffects.SolarBeacon import SolarBeaconNegativeEffectRoll, SolarBeaconPositiveEffectRoll
 from Cards.CardEffects.TheAdjudication import TheAdjudicationNegativeEffectRoll, TheAdjudicationPositiveEffectRoll
 from Cards.CardEffects.TheCreedsmen import TheCreedsmenNegativeEffectRoll, TheCreedsmenPositiveEffectRoll
 from Cards.CardEffects.TheGate import TheGateNegativeEffectRoll, TheGatePositiveEffectRoll
@@ -78,10 +78,10 @@ def selectEffect(RollResult, Card):
         'Possessor of the Maw': [PossessorOfTheMawNegativeEffectRoll, PossessorOfTheMawPositiveEffectRoll],
         'High Spire': [HighSpireNegativeEffectRoll, HighSpirePositiveEffectRoll],
         'The Gate': [TheGateNegativeEffectRoll, TheGatePositiveEffectRoll],
-        # 'Black Moon': [BlackMoonNegativeEffectRoll, BlackMoonPositiveEffectRoll],
-        # 'Solar Beacon': [SolarBeaconNegativeEffectRoll, SolarBeaconPositiveEffectRoll],
-        # 'Call of the Maw': [CallOfTheMawNegativeEffectRoll, CallOfTheMawPositiveEffectRoll],
-        # 'Astral Realm': [AstralRealmNegativeEffectRoll, AstralRealmPositiveEffectRoll]
+        'Black Moon': [BlackMoonNegativeEffectRoll, BlackMoonPositiveEffectRoll],
+        'Solar Beacon': [SolarBeaconNegativeEffectRoll, SolarBeaconPositiveEffectRoll],
+        'Call of the Maw': [CallOfTheMawNegativeEffectRoll, CallOfTheMawPositiveEffectRoll],
+        'Astral Realm': [AstralRealmNegativeEffectRoll, AstralRealmPositiveEffectRoll]
     }
     
     if Card in card_effects:

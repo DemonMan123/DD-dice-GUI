@@ -16,11 +16,11 @@ word_dict = {
     'Angel of the Maw': "Represents redemption, salvation, and the guiding light within the darkness.",
     'Possessor of the Maw': "Signifies control over primal forces, inner demons, and the harnessing of raw power.",
     'High Spire': "Embodies aspiration, elevation, and the pursuit of lofty goals.",
-    'The Gate': "Symbolizes transitions, thresholds, and the passage from one phase of life to another."
-    # 'Black Moon': "Represents mystery, hidden truths, and the unseen forces that shape our destinies.",
-    # 'Solar Beacon': "Signifies illumination, clarity, and the guiding light that leads the way through darkness.",
-    # 'Call of the Maw': "Embodies temptation, allure, and the irresistible pull of the unknown.",
-    # 'Astral Realm': "Represents transcendence, spiritual awakening, and the boundless expanses of the cosmos."
+    'The Gate': "Symbolizes transitions, thresholds, and the passage from one phase of life to another.",
+    'Black Moon': "Represents mystery, hidden truths, and the unseen forces that shape our destinies.",
+    'Solar Beacon': "Signifies illumination, clarity, and the guiding light that leads the way through darkness.",
+    'Call of the Maw': "Embodies temptation, allure, and the irresistible pull of the unknown.",
+    'Astral Realm': "Represents transcendence, spiritual awakening, and the boundless expanses of the cosmos."
 }
 
 def search_word(word):

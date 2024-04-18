@@ -19,7 +19,7 @@ root.iconphoto(False, img)
 root.resizable(False,False)
 root.geometry('350x150')
 
-Webhook_url = "EnterYourWebhookURL" # Mine
+Webhook_url = "EnterYourWebhookURL"
 current_datetime = datetime.datetime.now()
 logs_file_path = ""
 
@@ -52,7 +52,7 @@ def AdvantageRoll():
         advantage = "TIE"
     Result.set(f"D20: {D20R}, D90: {D90R}, Result of Advantage: {advantage}")
     logFileAppend(f"Advantage roll: {advantage}\nD20 result: {D20R}\nD90 result: {D90R}","ADVANTAGE ROLL")
-    LogSend(f"[ADVANTAGE ROLL RESULT]\nRoll: {advantage}\nD20 result: {D20R}\nD90 result: {D90R}","ADVANTAGE")
+    LogSend(f"Roll: {advantage}\nD20 result: {D20R}\nD90 result: {D90R}","ADVANTAGE")
     
 def DisadvantageRoll():
     print("Running Disadvantage Roll")
@@ -66,14 +66,14 @@ def DisadvantageRoll():
         Disadvantage = "TIE"
     Result.set(f"D12: {D12R}, D20: {D20R}, Result of Disadvantage: {Disadvantage}")
     logFileAppend(f"Disadvantage roll: {Disadvantage}\nD12 result: {D12R}\nD20 result: {D20R}", "DISADVANTAGE ROLL")
-    LogSend(f"[DISADVANTAGE ROLL LOG]\nRoll Result: {Disadvantage}\nD12 result: {D12R}\nD20 result: {D20R}","DISADVANTAGE")
+    LogSend(f"Roll Result: {Disadvantage}\nD12 result: {D12R}\nD20 result: {D20R}","DISADVANTAGE")
         
 def D20Single():
     print("Running D20 Roll")
     D20R = D20Roll()
     Result.set(f"You rolled... {D20R}")
     logFileAppend(f"Rolled {D20R}","D20")
-    LogSend(f"[D20 LOG]\nROLLED: {D20R}","D20")
+    LogSend(f"ROLLED: {D20R}","D20")
 
 # Creating a function to create the card description window
 CardDesc = None
@@ -116,7 +116,7 @@ def TarotCardSel():
     EffectDescription = getEffectDescription(Effect)
     print(f"Rolling D20... {Roll}")
     CardDescriptionWindow(TarotCard, CardDescription, Effect, RollType, EffectDescription)
-    LogSend(f"[TAROT LOG]\nDrew {TarotCard}\nDescription: {CardDescription}\nEffect: {Effect}","TAROT")
+    LogSend(f"Drew {TarotCard}\nDescription: {CardDescription}\nEffect: {Effect}","TAROT")
     logFileAppend(f"Drew {TarotCard}\nDescription: {CardDescription}\nEffect: {Effect}\nEffect type: {RollType}\nEffect Description: {EffectDescription}","TAROT")
     
 def LogSend(message,type):
@@ -136,6 +136,9 @@ def logFileAppend(Data,logname):
         time = current_datetime.strftime("%I:%M:%S %p")
         logs.write(f"\n[{logname} LOG at {time}]\n{Data}\n")
 
+def openLogs():
+    os.startfile(logs_file_path)
+
 # Create text for the output into GUI
 Result = StringVar()
 MainText = Label(root, textvariable=Result)
@@ -147,7 +150,7 @@ DisadvantageRollButton = ttk.Button(text="Disadvantage Roll", command=Disadvanta
 D20Rollbutton = ttk.Button(text="      D20 Roll      ", command=D20Single)
 SelectTarotCardButton = ttk.Button(text="      Tarot Card       ", command=TarotCardSel)
 ExitButton = ttk.Button(text="          Exit          ", command=exit)
-LogButton = ttk.Button(text="            Logs           ", command=LogSend)
+LogButton = ttk.Button(text="            Logs           ", command=openLogs)
 
 # Place everything on screen
 OutputLabel.place(x=0,y=10)

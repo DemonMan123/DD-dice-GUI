@@ -1,12 +1,12 @@
 import secrets
 
-NegativeEffects = ['EFFECT', 'EFFECT', 'EFFECT']
-PositiveEffects = ['EFFECT', 'EFFECT', 'EFFECT']
+NegativeEffects = ['Blinding Radiance', 'Solar Flare', 'Heat Exhaustion']
+PositiveEffects = ['Radiant Blessing', 'Solar Empowerment', 'Beacons Guidance']
 
-def NegativeEffectRoll():
+def SolarBeaconNegativeEffectRoll():
     NegativeRoll = secrets.choice(NegativeEffects)
     return NegativeRoll
 
-def PositiveEffectRoll():
+def SolarBeaconPositiveEffectRoll():
     PositiveRoll = secrets.choice(PositiveEffects)
     return PositiveRoll
