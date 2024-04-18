@@ -7,9 +7,9 @@ from tkinter import ttk
 from Dice.D90 import D90Roll
 from Dice.D20 import D20Roll
 from Dice.D12 import D12Roll
-from TarotCardSelect import SelectCards, selectEffect
+from util.TarotCardSelect import SelectCards, selectEffect
 from Cards.Descriptions import search_word
-from GetEffectDescriptions import getEffectDescription
+from util.GetEffectDescriptions import getEffectDescription
 
 # Create and setup main root window
 root = Tk()
@@ -19,7 +19,7 @@ root.iconphoto(False, img)
 root.resizable(False,False)
 root.geometry('350x150')
 
-Webhook_url = "YourURL"
+Webhook_url = "EnterYourWebhookURL"
 current_datetime = datetime.datetime.now()
 logs_file_path = ""
 
