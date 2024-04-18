@@ -34,7 +34,7 @@ Cards = [
     'The Oracle',
     'The Geminic Bond',
     'The Warp Drive',
-    'The Guardian Sheld',
+    'The Guardian Shield',
     'The Isolationist',
     'The Shifting Maw',
     'The Adjudication',

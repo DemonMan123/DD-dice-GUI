@@ -19,7 +19,7 @@ root.iconphoto(False, img)
 root.resizable(False,False)
 root.geometry('350x150')
 
-Webhook_url = "EnterYourWebhookURL"
+Webhook_url = "YourURL"
 current_datetime = datetime.datetime.now()
 logs_file_path = ""
 
@@ -38,6 +38,7 @@ def create_log_file():
         file.write("Log file created on " + current_datetime.strftime("%Y-%m-%d at %I:%M:%S %p\n"))
 
     print(f"Log file '{logs_filename}' has been created at '{log_dir}'.")
+    LogSend("TEST LOG... WORKING","INITIAL")
 
 # Create main roll functions
 def AdvantageRoll():
@@ -122,7 +123,7 @@ def TarotCardSel():
 def LogSend(message,type):
     data = {
         "username": f"{type} LOG",
-        "content": message
+        "content": f"{message}\n------------------------------\n"
     }
     
     response = requests.post(Webhook_url, json=data)
@@ -163,5 +164,6 @@ ExitButton.place(x=60, y=110)
 LogButton.place(x=170, y=110)
 
 # Start the GUI/loop and create a logfile
-create_log_file()
-root.mainloop()
+if __name__ == "__main__":
+    create_log_file()
+    root.mainloop()
